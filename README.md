@@ -8,4 +8,4 @@ A collection of Ansible scripts for commonly used applications in the DevOps env
 * Install Ansible: `sudo yum install ansible -y`
 
 Optional:
-* Setup Ansible hosts and config: `ansible-playbook setup/setup.yml
+* Setup Ansible hosts and config: `ansible-playbook setup/setup.yml`
