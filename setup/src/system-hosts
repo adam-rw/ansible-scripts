@@ -1,0 +1,7 @@
+127.0.0.1   localhost localhost.localdomain localhost4 localhost4.localdomain4
+::1         localhost localhost.localdomain localhost6 localhost6.localdomain6
+
+10.10.0.1 vm1 vm1-ctl docker-registry
+10.10.0.2 vm2
+10.10.0.3 vm3
+10.10.0.4 vm4

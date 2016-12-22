@@ -8,3 +8,11 @@
     copy: src="src/hosts" dest="/etc/ansible/hosts" owner=root group=root mode=0644
   - name: copy ansible Configure
     copy: src="src/ansible.cfg" dest="/etc/ansible/ansible.cfg" owner=root group=root mode=0644
+
+# Configure hosts
+- hosts: dev
+  become_method: sudo
+  become: true
+  tasks:
+  - name: copy system hosts file
+    copy: src="src/system-hosts" dest="/etc/hosts" owner=root group=root mode=0644
