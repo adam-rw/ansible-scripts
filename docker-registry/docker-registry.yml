@@ -1,0 +1,9 @@
+---
+# Install and run Docker Registry
+- hosts: docker-registry
+  tasks:
+  - name: run docker Registry
+    docker:
+      name: registry
+        
+
