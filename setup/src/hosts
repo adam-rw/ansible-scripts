@@ -1,23 +1,21 @@
-[vm1]
-10.10.0.1
+localhost ansible_connection=local
 
-[vm2]
-10.10.0.2
+vm1 ansible_host=10.10.0.1
+vm2 ansible_host=10.10.0.2
+vm3 ansible_host=10.10.0.3
+vm4 ansible_host=10.10.0.4
 
-[vm3]
-10.10.0.3
-
-[vm4]
-10.10.0.4
-
-[dev:child]
+[dev]
 vm1
 vm2
 vm3
 vm4
 
-[docker:children]
-dev
+[docker]
+vm1
+vm2
+vm3
+vm4
 
-[docker-registry:children]
+[docker-registry]
 vm1
