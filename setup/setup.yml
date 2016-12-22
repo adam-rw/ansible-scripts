@@ -1,0 +1,6 @@
+---
+# Install Docker on CentOS 7
+- hosts: docker
+  tasks:
+  - name: create docker repo config
+    copy: src="src/docker.repo" dest="/etc/yum.repos.d/docker.repo" owner=root group=root mode=0644
