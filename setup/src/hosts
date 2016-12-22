@@ -1,7 +1,23 @@
-[dev]
+[vm1]
+10.10.0.1
+
+[vm2]
 10.10.0.2
+
+[vm3]
 10.10.0.3
+
+[vm4]
 10.10.0.4
+
+[dev:child]
+vm1
+vm2
+vm3
+vm4
 
 [docker:children]
 dev
+
+[docker-registry:children]
+vm1
