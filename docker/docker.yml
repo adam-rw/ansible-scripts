@@ -4,3 +4,13 @@
   tasks:
   - name: create docker repo config
     copy: src="src/docker.repo" dest="/etc/yum.repos.d/docker.repo" owner=root group=root mode=0644
+  - name: install docker version
+    yum:
+      name: docker-engine-1.12.5-1.el7.centos
+      state: present
+  - name: configure docker service
+    service:
+      name: docker
+      enabled: yes
+      state: started
+
